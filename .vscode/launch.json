@@ -1,0 +1,44 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "codemagic_tutorial_development",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "--flavor",
+                "development",
+                "--dart-define",
+                "ENVIRONMENT=development",
+            ],
+            "flutterMode": "debug"
+        },
+        {
+            "name": "codemagic_tutorial_staging",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "--flavor",
+                "staging",
+                "--dart-define",
+                "ENVIRONMENT=staging",
+            ],
+            "flutterMode": "debug"
+        },
+        {
+            "name": "codemagic_tutorial_production",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "--flavor",
+                "production",
+                "--dart-define",
+                "ENVIRONMENT=production",
+            ],
+            "flutterMode": "debug"
+        }
+    ]
+}
